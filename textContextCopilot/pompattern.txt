@@ -1,0 +1,47 @@
+I am using playwright Page object model pattern.
+Based on this fraemwork pattern the code should be automatically synced up to the appropriate positions.below mentioned are my project structure.
+I am using locators in "locators" folder based on the module. the name should be the task related name.js file
+I am using Pages folder for page objects based on the modules
+I am using test folder for testcases.
+All the expected results should be stored in Assertions folder based on module wise.js file
+All the reusable components should be placed inside GeneralUtilities. Not based on module wise
+.env is for using the Main URL 
+After login everytime , use this code for getting base URL , const baseUrl = process.env.BASE_URL.replace('/login/index_oldtest/', '');
+
+/*
+  Project Structure — Playwright (POM) with Copilot Integration
+
+  📁 locators/
+    - Contains module-based locator files (e.g., loginPageLocators.js)
+    - Naming should reflect the task (e.g., resetPasswordLocators.js)
+
+  📁 Pages/
+    - Page Object Model (POM) classes per module (e.g., LoginPage.js)
+    - Uses locators from the locators/ folder
+    - Each class should wrap navigation, actions, and getter methods
+
+  📁 Assertions/
+    - Stores expected result constants per module (e.g., loginAssertions.js)
+    - Assertions are used in test files for validation
+
+  📁 GeneralUtilities/
+    - Reusable non-module-specific utilities (e.g., waitForNetworkIdle, date formatting)
+  
+  📁 test/
+    - Test cases using Playwright Test runner
+    - Each test imports relevant Page, locators, and assertions
+    - Tests use methods from Page Objects, not direct locators
+    - Use `process.env.BASE_URL.replace('/login/index_oldtest/', '')` to get base URL after login
+
+  ✅ Goal:
+    - Automatically generate test cases in test/ folder using Page Object methods
+    - Follow this pattern:
+        1. Import relevant Page class and instantiate it with `new Page(page)`
+        2. Call methods (e.g., loginPage.login(username, password))
+        3. Use assertion constants for validating outcomes
+        4. Use utilities from GeneralUtilities where needed
+
+  🧠 Example Test Generation Prompt (for Copilot):
+    "Generate a login test using LoginPage that asserts dashboard redirect and handles network idle"
+
+*/

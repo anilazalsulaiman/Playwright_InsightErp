@@ -1,0 +1,4 @@
+For a page file: "Create a LoginPage class in Pages/LoginPage.js that uses locators from locators/loginPageLocators.js and includes methods for login, password reset, and error validation."
+For a test: "Write a test in test/login.spec.js that uses LoginPage to login and validates dashboard navigation using assertions from Assertions/dashboardAssertions.js."
+For utilities: "Create a helper function in GeneralUtilities/waitUtils.js to wait for network to be idle."
+

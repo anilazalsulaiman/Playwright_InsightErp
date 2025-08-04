@@ -1,0 +1,27 @@
+// textContextCopilot/test_pompattern.txt
+
+const { test, expect } = require('@playwright/test');
+const LoginPage = require('../Pages/LoginPage');
+const loginAssertions = require('../Assertions/loginAssertions');
+const waitForNetworkIdle = require('../GeneralUtilities/waitForNetworkIdle');
+
+test('QA user can login and see VIEW PROFILE button on dashboard', async ({ page }) => {
+    const baseUrl = process.env.BASE_URL.replace('/login/index_oldtest/', '');
+    const loginPage = new LoginPage(page);
+
+    // Navigate to login page
+    await page.goto(`${baseUrl}/login`);
+
+    // Login as QA
+    await loginPage.login('QA_username', 'QA_password');
+
+    // Wait for network idle
+    await waitForNetworkIdle(page);
+
+    // Assert dashboard redirect
+    expect(page.url()).toBe(loginAssertions.dashboardUrl);
+
+    // Assert VIEW PROFILE button is visible
+    const isViewProfileVisible = await loginPage.isViewProfileButtonVisible();
+    expect(isViewProfileVisible).toBe(loginAssertions.viewProfileButtonVisible);
+});
