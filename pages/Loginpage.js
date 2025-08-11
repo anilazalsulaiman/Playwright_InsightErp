@@ -35,5 +35,5 @@ class Loginpage {
     return await this.dashboardElement_ViewProfile.textContent();
   }
 }
-
-module.exports = { Loginpage };
+export { Loginpage };
+//module.exports = { Loginpage };
