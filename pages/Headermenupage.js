@@ -66,6 +66,26 @@ class Headermenupage {
       // FIN HISTORY
     this.click_apps_mybills_FinHistory = page.locator(headermenu.MyBills.click_apps_mybills_FinHistory);
     this.assert_FinHistory_Page_title = page.locator(headermenu.MyBills.assert_FinHistory_Page_title);
+
+    // GOALS & REVIEWS
+    this.hover_apps_GandR = page.locator(headermenu.GoalsReviews.hover_apps_GandR);
+
+    // INITIATION
+    this.click_apps_GandR_initiation = page.locator(headermenu.GoalsReviews.click_apps_GandR_initiation);
+    this.assert_GandR_initiation_Page_title = page.locator(headermenu.GoalsReviews.assert_GandR_initiation_Page_title);
+
+    // MY GOALS
+    this.click_apps_GandR_MyGoals = page.locator(headermenu.GoalsReviews.click_apps_GandR_MyGoals);
+    this.assert_GandR_MyGoals_Page_title = page.locator(headermenu.GoalsReviews.assert_GandR_MyGoals_Page_title);
+
+    // RATING PENDING
+    this.click_apps_GandR_RatingPending = page.locator(headermenu.GoalsReviews.click_apps_GandR_RatingPending);
+    this.assert_GandR_RatingPending_Page_title_BeforeInitiation = page.locator(headermenu.GoalsReviews.assert_GandR_RatingPending_Page_title_BeforeInitiation);
+    this.assert_GandR_RatingPending_Page_title__AfterInitiation = page.locator(headermenu.GoalsReviews.assert_GandR_RatingPending_Page_title__AfterInitiation);
+
+    // ADD CUSTOM GOALS
+    this.click_apps_GandR_AddCustomGoals = page.locator(headermenu.GoalsReviews.click_apps_GandR_AddCustomGoals);
+    this.assert_GandR_AddCustomGoals_Page_title = page.locator(headermenu.GoalsReviews.assert_GandR_AddCustomGoals_Page_title);
   }
 
   async isHeaderAppVisible() {

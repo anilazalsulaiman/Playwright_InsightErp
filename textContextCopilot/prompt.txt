@@ -2,3 +2,9 @@ For a page file: "Create a LoginPage class in Pages/LoginPage.js that uses locat
 For a test: "Write a test in test/login.spec.js that uses LoginPage to login and validates dashboard navigation using assertions from Assertions/dashboardAssertions.js."
 For utilities: "Create a helper function in GeneralUtilities/waitUtils.js to wait for network to be idle."
 
+
+Generate a playwright test for the following scenario and execute the project with playwright mcp:
+test Steps
+1. Navigate to Url "https://ytr.insemitech.com/login/index_oldtest/"
+2. login as QA with username='INQA1' and password = "123456"
+3. verify the dashboard URL and i am expecting "https://ytr.insemitech.com/dashboard/home/"

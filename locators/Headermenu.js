@@ -67,5 +67,28 @@ export const headermenu = {
     // FIN HISTORY
     click_apps_mybills_FinHistory: "//a[@href='/apps/Reim/finapproval/Financehistory/']",
     assert_FinHistory_Page_title: "//span[normalize-space()='FINANCE HISTORY']"
+  },
+
+  GoalsReviews: {
+    // Goals & Reviews Main Menu
+    hover_apps_GandR: "(//p[normalize-space()='Goals and Reviews'])[1]",
+
+    // INITIATION
+    click_apps_GandR_initiation: "//a[@href='/apps/GandR/admin/initiate/']",
+    assert_GandR_initiation_Page_title: "//h6[normalize-space()='Initiate G&R']",
+
+    // MY GOALS
+    click_apps_GandR_MyGoals: "//a[@href='/apps/GandR/employee/mygoals/']",
+    assert_GandR_MyGoals_Page_title: "//strong[normalize-space()='Current Year Goals']",
+
+    // RATING PENDING
+    click_apps_GandR_RatingPending: "//a[@href='/apps/GandR/rm/peruserreport/']",
+    assert_GandR_RatingPending_Page_title_BeforeInitiation: "//h6[normalize-space()='No Pending Lists Available']",
+    assert_GandR_RatingPending_Page_title__AfterInitiation: "//div[normalize-space()='SUBMIT YOUR RATINGS FOR THIS YEAR']",
+
+    // ADD CUSTOM GOALS
+    click_apps_GandR_AddCustomGoals: "//a[@href='/apps/GandR/customgoals/']",
+    assert_GandR_AddCustomGoals_Page_title: "//div[@aria-label='Employee ID']"
   }
+
 };

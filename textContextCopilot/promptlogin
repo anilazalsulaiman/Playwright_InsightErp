@@ -1,0 +1,10 @@
+References : 
+find out the locators automatically by using codegen and execute the test steps by reviewing the test steps. 
+
+
+Generate a playwright test for the following scenario and execute the project using chromium mode:
+
+test Steps
+Navigate to Url "https://ytr.insemitech.com/login/index_oldtest/"
+login as QA with username='INQA1' and password = "123456" 
+verify the dashboard URL and i am expecting "https://ytr.insemitech.com/dashboard/home/"

@@ -1,5 +1,5 @@
 import {test, expect} from '@playwright/test';
-import {Loginpage} from '../pages/Loginpage.js';
+import { Loginpage } from '../pages/Loginpage.js';
 import dotenv from 'dotenv';
 import {roles} from '../utils/LoginCredentials.js';
 
